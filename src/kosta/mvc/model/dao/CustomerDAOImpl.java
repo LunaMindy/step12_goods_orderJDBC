@@ -17,7 +17,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		  PreparedStatement ps=null;
 		  ResultSet rs=null;
 		  Customer customer=null;
-		 try {
+		 try {//r5rtrtr
 		   con = DbUtil.getConnection();
 		   ps= con.prepareStatement("select * from Customer where user_id=? and user_pwd=?");
 		   ps.setString(1, userId);
